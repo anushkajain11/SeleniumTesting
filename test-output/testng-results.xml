@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="15701" started-at="2018-01-10T07:27:12Z" finished-at="2018-01-10T07:27:28Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="15701" started-at="2018-01-10T07:27:12Z" finished-at="2018-01-10T07:27:28Z">
+      <class name="TestContactUs">
+        <test-method status="PASS" signature="setup()[pri:0, instance:TestContactUs@27efef64]" name="setup" is-config="true" duration-ms="9758" started-at="2018-01-09T23:27:12Z" finished-at="2018-01-09T23:27:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="testContactUsFlow()[pri:0, instance:TestContactUs@27efef64]" name="testContactUsFlow" duration-ms="5908" started-at="2018-01-09T23:27:22Z" finished-at="2018-01-09T23:27:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactUsFlow -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:TestContactUs@27efef64]" name="tearDown" is-config="true" duration-ms="14" started-at="2018-01-09T23:27:28Z" finished-at="2018-01-09T23:27:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- TestContactUs -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
