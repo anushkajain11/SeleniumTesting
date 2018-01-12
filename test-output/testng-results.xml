@@ -1,25 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20044" started-at="2018-01-10T22:36:03Z" finished-at="2018-01-10T22:36:23Z">
+  <suite name="Default suite" duration-ms="17311" started-at="2018-01-11T01:20:29Z" finished-at="2018-01-11T01:20:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20044" started-at="2018-01-10T22:36:03Z" finished-at="2018-01-10T22:36:23Z">
-      <class name="ScollUpAndDownTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:ScollUpAndDownTest@27efef64]" name="setup" is-config="true" duration-ms="9913" started-at="2018-01-10T14:36:03Z" finished-at="2018-01-10T14:36:13Z">
+    <test name="Default test" duration-ms="17311" started-at="2018-01-11T01:20:29Z" finished-at="2018-01-11T01:20:46Z">
+      <class name="AddToCartTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:AddToCartTest@27efef64]" name="setup" is-config="true" duration-ms="8589" started-at="2018-01-10T17:20:29Z" finished-at="2018-01-10T17:20:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="testScrollUpAndDown()[pri:0, instance:ScollUpAndDownTest@27efef64]" name="testScrollUpAndDown" duration-ms="10082" started-at="2018-01-10T14:36:13Z" finished-at="2018-01-10T14:36:23Z">
+        <test-method status="PASS" signature="testSelectAnItem()[pri:0, instance:AddToCartTest@27efef64]" name="testSelectAnItem" duration-ms="6863" started-at="2018-01-10T17:20:38Z" finished-at="2018-01-10T17:20:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testScrollUpAndDown -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ScollUpAndDownTest@27efef64]" name="tearDown" is-config="true" duration-ms="12" started-at="2018-01-10T14:36:23Z" finished-at="2018-01-10T14:36:23Z">
+        </test-method> <!-- testSelectAnItem -->
+        <test-method status="FAIL" signature="testCheckDetailsAndBuy()[pri:1, instance:AddToCartTest@27efef64]" name="testCheckDetailsAndBuy" duration-ms="1780" started-at="2018-01-10T17:20:45Z" finished-at="2018-01-10T17:20:46Z">
+          <exception class="org.openqa.selenium.ElementNotVisibleException">
+            <message>
+              <![CDATA[Element is not currently visible and so may not be interacted with
+Command duration or timeout: 154 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Hp', ip: '10.0.0.15', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 632db6a6-e84a-4c1a-a70d-7923f51466f7]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotVisibleException: Element is not currently visible and so may not be interacted with
+Command duration or timeout: 154 milliseconds
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'Hp', ip: '10.0.0.15', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_111'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=44.0, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 632db6a6-e84a-4c1a-a70d-7923f51466f7
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:327)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+	at org.openqa.selenium.support.ui.Select.setSelected(Select.java:323)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:119)
+	at AddToCartTest.testCheckDetailsAndBuy(AddToCartTest.java:52)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:658)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:866)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1192)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:128)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1306)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1231)
+	at org.testng.TestNG.runSuites(TestNG.java:1146)
+	at org.testng.TestNG.run(TestNG.java:1117)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotVisibleException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCheckDetailsAndBuy -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:AddToCartTest@27efef64]" name="tearDown" is-config="true" duration-ms="45" started-at="2018-01-10T17:20:46Z" finished-at="2018-01-10T17:20:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- ScollUpAndDownTest -->
+      </class> <!-- AddToCartTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
